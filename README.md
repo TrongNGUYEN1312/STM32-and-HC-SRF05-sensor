@@ -3,7 +3,8 @@
 ## Overview
 This project implements a real-time obstacle detection and intrusion alert system using an **STM32 microcontroller** and an **HC-SRF05 ultrasonic sensor**. The system dynamically maps the position of approaching objects on a **128x160 TFT display** and triggers automated hardware/software alerts when an object crosses a critical threshold.
 
-<img width="1133" height="622" alt="Screenshot 2026-03-04 120717" src="https://github.com/user-attachments/assets/b34426a9-c4f4-4dda-b86c-3f4977f82148" />
+<img width="740" height="422" alt="Picture2" src="https://github.com/user-attachments/assets/8ed4737c-decc-4df6-a4ec-ea971ba1d950" />
+
 
 ## Key Features
 * **Real-time Distance Measurement:** Accurately measures object distance up to 10 cm.
@@ -29,13 +30,11 @@ This project implements a real-time obstacle detection and intrusion alert syste
 
 | Component | Pin / Terminal | STM32 Pin | Note |
 | :--- | :--- | :--- | :--- |
-| **HC-SRF05** |
-| | VCC | 5V | |
+| **HC-SRF05** | VCC | 5V | |
 | | GND | GND | |
 | | TRIG | PB9 | |
 | | ECHO | PB8 | |
-| **TFT 128x160**| 
-| | SCK / SCL | PA5 (SPI1_SCK) | |
+| **TFT 128x160** | SCK / SCL | PA5 (SPI1_SCK) | |
 | | SDA / MOSI | PA7 (SPI1_MOSI) | |
 | | CS | PB0 | |
 | | A0 / DC / RS | PB1 | |
