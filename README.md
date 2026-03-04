@@ -3,6 +3,8 @@
 ## Overview
 This project implements a real-time obstacle detection and intrusion alert system using an **STM32 microcontroller** and an **HC-SRF05 ultrasonic sensor**. The system dynamically maps the position of approaching objects on a **128x160 TFT display** and triggers automated hardware/software alerts when an object crosses a critical threshold.
 
+<img width="1133" height="622" alt="Screenshot 2026-03-04 120717" src="https://github.com/user-attachments/assets/180f5a06-5cc2-4111-bb36-6dee17c08101" />
+
 ## Key Features
 * **Real-time Distance Measurement:** Accurately measures object distance up to 10 cm.
 * **Dynamic GUI Mapping:** Real-time visual representation on a 128x160 TFT screen, divided into "Safe Zone" and "Intrusion Zone".
@@ -36,7 +38,9 @@ This project implements a real-time obstacle detection and intrusion alert syste
 | | CS | PB0 |
 | | A0 / DC / RS | PB1 |
 | | RESET | PB10 |
-| **LED Alert** | Anode (+) | PB3 |
+| **LED Alert** | Anode (+) | PB3 | Connect in series with a **Resistor**|
+
+<img width="882" height="576" alt="Screenshot 2026-03-04 115918" src="https://github.com/user-attachments/assets/9dc946d2-0c8e-4f1d-be52-480518a0dea1" />
 
 ## Software & Tools Used
 * C/C++ (Bare-metal / HAL Library)
